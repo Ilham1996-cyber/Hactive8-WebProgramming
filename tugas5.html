@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cetak Hasil Pertemuan</title>
+    </head>
+    <body>
+        <label for="pesan">Pesan:</label>
+        <input type="pesan" id="text">
+        <br>
+        <br>
+        <label for="pertemuan">Berapa Kali:</label>
+        <input type="number" id="number"><br>
+        <button onclick="cetak()">Cetak!</button>
+        <ul id="print"></ul>
+        <script>
+            function cetak(){
+                const jumlah = document.getElementById("print")
+                for(let number = 0; number < 9; number = number + 1){
+                    jumlah.innerHTML = jumlah.innerHTML + '<li type="1">Belajar bersama Hacktiv8</li>'
+                }
+            }
+        </script>
+    </body>
+</html>

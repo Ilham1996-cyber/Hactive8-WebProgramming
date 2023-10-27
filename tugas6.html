@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TM6 Animasi Warna</title>
+    </head>
+    <body>
+        <p class="animasi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, recusandae et, quod vero quidem commodi neque omnis pariatur repudiandae voluptatum suscipit laborum doloribus sit quisquam molestiae harum distinctio, esse provident?</p>
+        <p class="animasi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, recusandae et, quod vero quidem commodi neque omnis pariatur repudiandae voluptatum suscipit laborum doloribus sit quisquam molestiae harum distinctio, esse provident?</p>
+        <p class="animasi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, recusandae et, quod vero quidem commodi neque omnis pariatur repudiandae voluptatum suscipit laborum doloribus sit quisquam molestiae harum distinctio, esse provident?</p>
+        <script>
+            var warna = document.getElementsByClassName("animasi");
+            setInterval(function(){
+                warna[0].style.color = "red";
+                warna[1].style.color = "green";
+                warna[2].style.color = "blue";
+                setTimeout(function(){
+                warna[0].style.color = "black";
+                warna[1].style.color = "black";
+                warna[2].style.color = "black";
+                },500);
+            },1000);
+        </script>
+    </body>
+</html>

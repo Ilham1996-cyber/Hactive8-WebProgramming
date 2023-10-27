@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lingkaran</title>
+</head>
+<body>
+<p>d=60 r=?</p>
+<br>
+<p>r=d/2 r=30</p>
+<br>
+<p>Luas Lingkaran = phi*r2</p>
+<br>
+<p>d=Keliling Lingkaran = phi*2*r</p>
+<br>
+<p>HASIL</p>
+<br>
+	<input type="number" placeholder="Masukkan Nilai Jari-Jari Lingkaran (cm)" id="jari"> 
+	<button onclick="lingkaran()">Hitung Keliling Lingkaran</button>
+	Hasil : <span id="hasil"></span>
+	<br>
+	<br>
+	<input type="number" placeholder="Masukkan Nilai Jari-Jari Lingkaran (cm)" id="luas"> 
+	<button onclick="lingkaran()">Hitung Luas Lingkaran</button>
+	Hasil : <span id="hasilluas"></span>
+    <script>function lingkaran() {
+        //untuk menghitung keliling lingkaran K= phi*2*r
+        document.getElementById('hasil').innerHTML=3.14*2*parseFloat(jari.value);
+        //untuk menghitung luas lingkaran l=phi*r2
+        document.getElementById('hasilluas').innerHTML=3.14*parseFloat(Math.pow(luas.value, 2));
+    }</script>
+</body>
+</html>
